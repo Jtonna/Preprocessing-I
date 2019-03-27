@@ -141,6 +141,9 @@ body {
 .section1 {
   border: 1px solid red;
 }
+.section1 .side-by-side img {
+  width: ;
+}
 .section2 {
   border: 1px solid green;
 }
