@@ -148,6 +148,21 @@ body {
   font-weight: 400;
   src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
 }
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.2rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.8rem;
+}
 .container {
   font-size: 1.4rem;
   font-family: 'Open Sans', sans-serif;
@@ -176,14 +191,17 @@ body {
   width: 100%;
   max-width: 600px;
 }
-.main-content-container .section1 {
+.me {
+  width: 5rem;
+}
+.section1 {
   padding: 2.5rem 0 0;
   border: 1px solid red;
   display: flex;
+  align-content: flex-start;
 }
-.main-content-container .section1 .side-by-side:first-child {
-  padding: 0 2rem 0 0;
-}
-.main-content-container .section1 .side-by-side:first-child .me {
-  width: 5rem;
+.section3 .appsAndTools {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
 }

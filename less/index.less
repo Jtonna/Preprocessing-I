@@ -75,13 +75,34 @@ body {
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 1.8rem;
+}
+
+h3 {
+	font-size: 1.2rem;
+}
+
+h4 {
+	font-size: 1rem;
+}
+
+h5 {
+	font-size: .8rem;
+}
+
 .container {
 	// Readibility first.
 	font-size: 1.4rem;
 	font-family: 'Open Sans', sans-serif;
 	color: @GunmetalPurple;
 }
-.nav-container{
+
+.nav-container {
 	background-color: @GunmetalGrey;
 	display: flex;
 	align-items: center;
@@ -89,38 +110,47 @@ body {
 	justify-content: space-between;
 	padding: .5rem 5rem .5rem;
 
-	.logo-container{
-		.logo{
-		width: 8rem;
+	.logo-container {
+		.logo {
+			width: 8rem;
 		}
 	}
+
 	.nav {
 		a {
 			text-decoration: none;
 			color: @GhostWhite;
 			padding: 0 .8rem 0;
 		}
-	
+
 		a:hover {
 			color: @MaximumBlue;
 		}
 	}
 }
-.main-content-container{
-		// centers everything in the container to the middle of the page
-		margin: 0 auto;
-		width: 100%;
-		max-width: 600px;
-		//
-		.section1{
-			padding: 2.5rem 0 0;
-			border: 1px solid red;
-			display: flex;
-			.side-by-side:first-child{
-				padding: 0 2rem 0 0;
-				.me{
-					width: 5rem;
-				}
-			}
+
+.main-content-container {
+	// centers everything in the container to the middle of the page
+	margin: 0 auto;
+	width: 100%;
+	max-width: 600px;
+}
+.me{ width: 5rem;}
+.section1 {
+	padding: 2.5rem 0 0;
+	border: 1px solid red;
+	display: flex;
+	align-content: flex-start;
+	}
+.section2{
+
+}
+.section3{
+	.appsAndTools{
+		display: flex;
+		flex-wrap: wrap;
+		align-content: space-around;
+		p{
 		}
+	}
 }
