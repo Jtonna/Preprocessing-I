@@ -122,11 +122,12 @@ h5 {
 			text-decoration: none;
 			color: @GhostWhite;
 			padding: 0 .8rem 0;
+			// & is a parent selector
+			&:hover{
+				color: @MaximumBlue;
+			}
 		}
 
-		a:hover {
-			color: @MaximumBlue;
-		}
 	}
 }
 
@@ -146,12 +147,14 @@ h5 {
 .section2{
 }
 .section3{
+	padding: 2.5rem 0 2.5rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	//  if the page gets too small this will keep the NEW line of text centered
 	text-align: center;
 	.appsAndTools{
+		padding: 1.5rem 0 0;
 		img{
 			height: 2.5rem;
 			width: 2.5rem;
