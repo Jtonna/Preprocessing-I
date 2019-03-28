@@ -47,40 +47,80 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
 	height: 100%;
 }
+
+/* My Code Starts Here */
+body {
+	/* (10/16)*100 = 62.5% */
+	/* sets 10 px to 1rem for responsive text */
+	font-size: 62.5%;
+	/* 1 rem = 10px */
+}
+
+
 /* Jtonna's Studio Color pallete. */
 @AwesomeRed: #FF1654;
 @GhostWhite: #FAFAFF;
 @GunmetalGrey: #30343F;
 @GunmetalPurple: #1E152A;
 @MaximumBlue: #B2ABF2;
-.nav{
-	border: 1px solid purple;
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.container {
+	// Readibility first.
+	font-size: 1.4rem;
+	font-family: 'Open Sans', sans-serif;
+	color: @GunmetalPurple;
 }
-.section1{
-	border: 1px solid red;
-}
-.section1{
-	.side-by-side{
-		img{
-			width: ;
+.nav-container{
+	background-color: @GunmetalGrey;
+	display: flex;
+	align-items: center;
+	// pushes the logo to the left and the nav to the right
+	justify-content: space-between;
+	padding: .5rem 5rem .5rem;
+
+	.logo-container{
+		.logo{
+		width: 8rem;
+		}
+	}
+	.nav {
+		a {
+			text-decoration: none;
+			color: @GhostWhite;
+			padding: 0 .8rem 0;
+		}
+	
+		a:hover {
+			color: @MaximumBlue;
 		}
 	}
 }
-.section2{
-	border: 1px solid green;
-}
-.section3{
-	border: 1px solid blue;
-}
-.footer{
-	border: 1px solid yellow;
+.main-content-container{
+		// centers everything in the container to the middle of the page
+		margin: 0 auto;
+		width: 100%;
+		max-width: 600px;
+		//
+		.section1{
+			padding: 2.5rem 0 0;
+			border: 1px solid red;
+			display: flex;
+			.side-by-side:first-child{
+				padding: 0 2rem 0 0;
+				.me{
+					width: 5rem;
+				}
+			}
+		}
 }

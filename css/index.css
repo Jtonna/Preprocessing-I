@@ -134,22 +134,56 @@ html,
 body {
   height: 100%;
 }
+/* My Code Starts Here */
+body {
+  /* (10/16)*100 = 62.5% */
+  /* sets 10 px to 1rem for responsive text */
+  font-size: 62.5%;
+  /* 1 rem = 10px */
+}
 /* Jtonna's Studio Color pallete. */
-.nav {
-  border: 1px solid purple;
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
 }
-.section1 {
+.container {
+  font-size: 1.4rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #1E152A;
+}
+.nav-container {
+  background-color: #30343F;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 5rem 0.5rem;
+}
+.nav-container .logo-container .logo {
+  width: 8rem;
+}
+.nav-container .nav a {
+  text-decoration: none;
+  color: #FAFAFF;
+  padding: 0 0.8rem 0;
+}
+.nav-container .nav a:hover {
+  color: #B2ABF2;
+}
+.main-content-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+.main-content-container .section1 {
+  padding: 2.5rem 0 0;
   border: 1px solid red;
+  display: flex;
 }
-.section1 .side-by-side img {
-  width: ;
+.main-content-container .section1 .side-by-side:first-child {
+  padding: 0 2rem 0 0;
 }
-.section2 {
-  border: 1px solid green;
-}
-.section3 {
-  border: 1px solid blue;
-}
-.footer {
-  border: 1px solid yellow;
+.main-content-container .section1 .side-by-side:first-child .me {
+  width: 5rem;
 }
