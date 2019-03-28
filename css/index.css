@@ -197,7 +197,6 @@ h5 {
 }
 .section1 {
   padding: 2.5rem 0 0;
-  border: 1px solid red;
   display: flex;
   align-content: flex-start;
 }
@@ -215,6 +214,17 @@ h5 {
   height: 2.5rem;
   width: 2.5rem;
 }
-.footer {
+.section4 p {
   text-align: center;
+}
+.section4 .projects-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section4 .projects-container .project {
+  padding: 1rem 2rem 1rem;
+}
+.section4 .projects-container .project img {
+  height: 4.5rem;
+  width: 8rem;
 }
