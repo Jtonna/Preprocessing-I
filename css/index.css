@@ -164,6 +164,7 @@ h5 {
   font-size: 0.8rem;
 }
 .container {
+  height: 100%;
   font-size: 1.4rem;
   font-family: 'Open Sans', sans-serif;
   color: #1E152A;
@@ -200,8 +201,16 @@ h5 {
   display: flex;
   align-content: flex-start;
 }
-.section3 .appsAndTools {
+.section3 {
   display: flex;
-  flex-wrap: wrap;
-  align-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.section3 .appsAndTools img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.footer {
+  text-align: center;
 }
